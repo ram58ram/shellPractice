@@ -14,7 +14,7 @@ read -s PASS
 echo "your PASSWORD is $PASS"
 read -p line
 echo "yes same line $line"
-readh -s -p linesecure
+readh -p -s linesecure
 echo "yes this is secure same line $linesecure"
 echo "command line 1 $1"
 echo "command line 2 $2"
