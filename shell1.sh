@@ -20,9 +20,9 @@
 # yum install mysql -y
 
 fruitArray=("organge" "banna" "apple")
-dayArray=("MON", "SUN", "TUE")
+dayArray=(MON SUN TUE)
 
-echo "fruits are $fruitArray"
-echo "fruits are ${fruitArray}"
-echo "fruits are ${dayArray[$@]}"
-echo "fruits are ${dayArray[$#]}"
+echo "fruits are ${fruitArray[1]}"
+echo "fruits are ${fruitArray[2]}"
+echo "fruits are ${dayArray[@]}"
+echo "fruits are ${dayArray[#]}"
