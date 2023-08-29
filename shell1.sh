@@ -10,7 +10,7 @@
 # echo "end of the script"
 
 USERID=$(id -u)
-if [ USERID -ne 0 ]; then
+if [ $USERID -ne 0 ]; then
     echo "this is not root user"
     sudo su -
     echo "switched to root success? $?"    
