@@ -12,7 +12,9 @@
 USERID=$(id -u)
 if [ USERID -ne 0 ]; then
     echo "this is not root user"
-else
     sudo su -
-    yum install mysql -y
+    echo "switched to root success? $?"    
+else
+    echo "you are root user"
 fi
+yum install mysql -y
